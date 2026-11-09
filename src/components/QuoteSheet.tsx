@@ -14,7 +14,7 @@ export function openQuote(c: QuoteContent) {
 }
 
 function textOf(c: QuoteContent) {
-  return `${c.ar ? `${c.ar}\n\n` : ''}${c.text}\n— ${c.ref}\n\n${appUrl()}`;
+  return `${c.ar ? `${c.ar}\n\n` : ''}${c.text}\n(${c.ref})\n\n${appUrl()}`;
 }
 
 export function QuoteSheet() {

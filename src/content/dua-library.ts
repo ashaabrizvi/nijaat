@@ -6,7 +6,7 @@ import type { L } from './types';
  *  - Qur'anic duas reference generated ayat (Arabic, translations and
  *    transliteration all come from scripts/build-ayat.mjs).
  *  - Sunnah duas: Arabic copied from the sunnah.com dataset; references and
- *    gradings as shown there. Urdu meanings are ours — see README → Content review.
+ *    gradings as shown there. Urdu meanings are ours: see README → Content review.
  */
 export type DuaEntry =
   | { id: string; kind: 'quran'; ayahId: string; note?: L }
@@ -42,7 +42,7 @@ export const DUA_LIBRARY: DuaCategory[] = [
         id: 'adam',
         kind: 'quran',
         ayahId: 'araf-23',
-        note: { en: 'The dua of Adam and Hawwa (peace be upon them) — the first tawbah.', ur: 'حضرت آدمؑ اور حضرت حواؑ کی دعا — پہلی توبہ۔' },
+        note: { en: 'The dua of Adam and Hawwa (peace be upon them), the first tawbah.', ur: 'حضرت آدمؑ اور حضرت حواؑ کی دعا، پہلی توبہ۔' },
       },
       {
         id: 'sayyid',
@@ -52,7 +52,7 @@ export const DUA_LIBRARY: DuaCategory[] = [
         meaning: SAYYID_ISTIGHFAR.meaning,
         source: SAYYID_ISTIGHFAR.source,
         grade: sahih,
-        note: { en: 'Sayyid al-Istighfar — the master of seeking forgiveness.', ur: 'سید الاستغفار — استغفار کا سردار۔' },
+        note: { en: 'Sayyid al-Istighfar: the master of seeking forgiveness.', ur: 'سید الاستغفار: استغفار کا سردار۔' },
       },
       {
         id: 'atubu',
@@ -85,7 +85,7 @@ export const DUA_LIBRARY: DuaCategory[] = [
         kind: 'sunnah',
         ar: 'اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي',
         translit: 'Allāhumma innaka ʿAfuwwun tuḥibbul-ʿafwa faʿfu ʿannī.',
-        meaning: { en: 'O Allah, You are the Pardoner and You love to pardon — so pardon me.', ur: 'اے اللہ! تو بہت معاف کرنے والا ہے، معاف کرنے کو پسند کرتا ہے، پس مجھے معاف فرما دے۔' },
+        meaning: { en: 'O Allah, You are the Pardoner and You love to pardon, so pardon me.', ur: 'اے اللہ! تو بہت معاف کرنے والا ہے، معاف کرنے کو پسند کرتا ہے، پس مجھے معاف فرما دے۔' },
         source: { en: 'Jami` at-Tirmidhi 3513', ur: 'جامع ترمذی ۳۵۱۳' },
         grade: { en: 'Sahih (Darussalam)', ur: 'صحیح (دارالسلام)' },
         note: { en: 'Taught to Aisha (RA) for Laylat al-Qadr.', ur: 'حضرت عائشہؓ کو لیلۃ القدر کے لیے سکھائی گئی۔' },
@@ -117,13 +117,22 @@ export const DUA_LIBRARY: DuaCategory[] = [
         id: 'yunus',
         kind: 'quran',
         ayahId: 'anbiya-87-88',
-        note: { en: 'The dua of Yunus (AS) from the darkness — and Allah’s promise right after it.', ur: 'اندھیروں سے حضرت یونسؑ کی دعا — اور اس کے فوراً بعد اللہ کا وعدہ۔' },
+        note: { en: 'The dua of Yunus (AS) from the darkness, and Allah’s promise right after it.', ur: 'اندھیروں سے حضرت یونسؑ کی دعا، اور اس کے فوراً بعد اللہ کا وعدہ۔' },
       },
       {
         id: 'sadri',
         kind: 'quran',
         ayahId: 'taha-25-28',
-        note: { en: 'Musa (AS) before facing Pharaoh — for courage and ease.', ur: 'فرعون کا سامنا کرنے سے پہلے حضرت موسیٰؑ کی دعا — ہمت اور آسانی کے لیے۔' },
+        note: { en: 'Musa (AS) before facing Pharaoh, for courage and ease.', ur: 'فرعون کا سامنا کرنے سے پہلے حضرت موسیٰؑ کی دعا، ہمت اور آسانی کے لیے۔' },
+      },
+      {
+        id: 'faqir',
+        kind: 'quran',
+        ayahId: 'qasas-24',
+        note: {
+          en: 'Musa (AS), alone and far from home in Madyan: “My Lord, I am in need of whatever good You send me.”',
+          ur: 'حضرت موسیٰؑ، مدین میں تنہا اور گھر سے دور: ”اے رب! جو خیر بھی تو مجھ پر نازل کرے، میں اس کا محتاج ہوں۔“',
+        },
       },
       {
         id: 'hawla',
@@ -169,7 +178,7 @@ export const DUA_LIBRARY: DuaCategory[] = [
         ar: 'اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلاَهَا',
         translit: 'Allāhumma āti nafsī taqwāhā, wa zakkihā anta khayru man zakkāhā, anta waliyyuhā wa mawlāhā.',
         meaning: {
-          en: 'O Allah, grant my soul its piety and purify it — You are the best to purify it. You are its Protector and Guardian.',
+          en: 'O Allah, grant my soul its piety and purify it. You are the best to purify it. You are its Protector and Guardian.',
           ur: 'اے اللہ! میرے نفس کو اس کا تقویٰ عطا فرما اور اسے پاک کر دے، تو ہی اسے سب سے بہتر پاک کرنے والا ہے، تو ہی اس کا کارساز اور مولا ہے۔',
         },
         source: { en: 'Sahih Muslim 2722 (part)', ur: 'صحیح مسلم ۲۷۲۲ (حصہ)' },

@@ -29,7 +29,7 @@ function DuaCard({ d }: { d: DuaEntry }) {
   const v = view(d);
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(`${v.ar}\n\n${v.translit}\n\n${v.meaning}\n— ${v.source}`);
+      await navigator.clipboard.writeText(`${v.ar}\n\n${v.translit}\n\n${v.meaning}\n(${v.source})`);
       showToast(t('copiedDua'));
     } catch {
       /* ignore */

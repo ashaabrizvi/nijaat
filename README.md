@@ -17,8 +17,8 @@ The word *nijaat* is trending because of a popular drama. This app is about what
 | **Nijaat** | "What is Nijaat?" covers the word, the Qur'anic invitation to *an-najāh* (40:41), Yunus (AS) in the darkness (21:87–88), what nijaat is *not*, and "He comes running". |
 | **More** | A hub of companions (below), plus settings: language, day/night/auto theme, privacy, install, share, sources and reset. |
 | **Prayer times** | Calculated on the device with [adhan](https://github.com/batoulapps/adhan-js). Choose a city or use GPS (rounded to about 1 km and never sent anywhere). Shows the next prayer with a countdown, today's times, the Qibla bearing, the calculation method and the Hanafi/Shafi'i Asr. |
-| **Tasbih** | A big, tappable bead with haptics, six adhkar, targets of 33/99/100/∞, and today's and all-time totals. |
-| **Duas** | 19 duas in four themes (forgiveness; a heavy heart; guidance and steadfastness; this life and the next). Qur'anic duas come from the generated ayat. Sunnah duas use Arabic copied from the sunnah.com dataset, with grading. |
+| **Tasbih** | A big, tappable bead with haptics, 21 adhkar in three groups (daily remembrance, seeking forgiveness, asking Allah), each with its source and virtue, targets of 33/99/100/∞, and today's and all-time totals. |
+| **Duas** | 20 duas in four themes (forgiveness; a heavy heart; guidance and steadfastness; this life and the next). Qur'anic duas come from the generated ayat. Sunnah duas use Arabic copied from the sunnah.com dataset, with grading. |
 | **Journal** | Private reflections with gentle prompts and mood chips. Entries stay on the device, with a plain-text export. |
 | **Quote cards** | Share an ayah or dua as an image: Story (9:16) or Post (1:1), day or night. Drawn on a canvas with correct Arabic and Urdu shaping. |
 | **Reminders** | Prayer-time and nightly istighfar notifications. On the web these work while the app is open or installed and recently used. Phase 3 switches to native local notifications. |

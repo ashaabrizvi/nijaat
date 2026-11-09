@@ -22,8 +22,8 @@ export const HADITH: Hadith[] = [
   {
     id: 'hand',
     text: {
-      en: 'Allah stretches out His Hand by night so that the one who sinned by day may repent, and He stretches out His Hand by day so that the one who sinned by night may repent — until the sun rises from the west.',
-      ur: 'اللہ رات کو اپنا ہاتھ پھیلاتا ہے تاکہ دن میں گناہ کرنے والا توبہ کر لے، اور دن کو اپنا ہاتھ پھیلاتا ہے تاکہ رات میں گناہ کرنے والا توبہ کر لے — یہاں تک کہ سورج مغرب سے طلوع ہو۔',
+      en: 'Allah stretches out His Hand by night so that the one who sinned by day may repent, and He stretches out His Hand by day so that the one who sinned by night may repent, until the sun rises from the west.',
+      ur: 'اللہ رات کو اپنا ہاتھ پھیلاتا ہے تاکہ دن میں گناہ کرنے والا توبہ کر لے، اور دن کو اپنا ہاتھ پھیلاتا ہے تاکہ رات میں گناہ کرنے والا توبہ کر لے، یہاں تک کہ سورج مغرب سے طلوع ہو۔',
     },
     source: { en: 'Sahih Muslim 2759', ur: 'صحیح مسلم ۲۷۵۹' },
     grade: sahih,
@@ -40,7 +40,7 @@ export const HADITH: Hadith[] = [
   {
     id: 'clouds',
     text: {
-      en: 'Allah said: “O son of Adam! Were your sins to reach the clouds of the sky, and then you sought My forgiveness, I would forgive you — and I would not mind.”',
+      en: 'Allah said: “O son of Adam! Were your sins to reach the clouds of the sky, and then you sought My forgiveness, I would forgive you, and I would not mind.”',
       ur: 'اللہ نے فرمایا: ”اے ابنِ آدم! اگر تیرے گناہ آسمان کے بادلوں تک پہنچ جائیں، پھر تو مجھ سے بخشش مانگے، تو میں تجھے بخش دوں گا اور مجھے کوئی پروا نہیں۔“',
     },
     source: { en: 'Jami` at-Tirmidhi 3540', ur: 'جامع ترمذی ۳۵۴۰' },
@@ -100,5 +100,5 @@ export const hadith = (id: string): Hadith => {
   return h;
 };
 
-/** Shown after "I'm returning" — the mercy narrations. */
+/** Shown after "I'm returning": the mercy narrations. */
 export const MERCY_HADITH = ['camel', 'hand', 'running', 'clouds', 'best-sinners'];

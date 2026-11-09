@@ -1,22 +1,68 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { Icon } from '../../components/Icon';
 import { PageHead } from '../../components/PageHead';
-import { DHIKR } from '../../content/strings-tools';
+import { DHIKR, DHIKR_GROUPS, dhikrView } from '../../content/dhikr';
 import { today } from '../../lib/clock';
-import { num, t, tl } from '../../lib/i18n';
+import { lang, num, t, tl } from '../../lib/i18n';
 import { haptic } from '../../lib/share';
 import { state, update } from '../../lib/store';
 
 const TARGETS = [33, 99, 100, 0];
 
+function Picker({ current, onClose }: { current: string; onClose: () => void }) {
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => document.body.classList.remove('no-scroll');
+  }, []);
+  const pick = (id: string) => {
+    if (id !== current) update((s) => void ((s.tasbih.dhikr = id), (s.tasbih.count = 0)));
+    haptic(10);
+    onClose();
+  };
+  return (
+    <div class="modal" role="dialog" aria-modal="true" aria-label={t('chooseDhikr')}
+      onClick={(e) => e.target === e.currentTarget && onClose()} onKeyDown={(e) => e.key === 'Escape' && onClose()}>
+      <div class="modal-card">
+        <header class="modal-head">
+          <h2 class="card-title">{t('chooseDhikr')}</h2>
+          <button class="icon-btn static" onClick={onClose} aria-label={t('close')}>
+            <Icon name="close" size={18} />
+          </button>
+        </header>
+        {DHIKR_GROUPS.map((g) => (
+          <section key={g.id} class="dhikr-group">
+            <div class="section-label">{tl(g.title)}</div>
+            <ul class="card dhikr-list">
+              {DHIKR.filter((d) => d.group === g.id).map((d) => {
+                const v = dhikrView(d, lang.value);
+                return (
+                  <li key={d.id}>
+                    <button class={d.id === current ? 'on' : ''} aria-pressed={d.id === current} onClick={() => pick(d.id)}>
+                      <span class="dl-ar" lang="ar" dir="rtl">{v.ar}</span>
+                      <span class="dl-tr" dir="ltr">{v.label}</span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function Tasbih() {
   const ts = state.value.tasbih;
-  const d = DHIKR.find((x) => x.id === ts.dhikr) ?? DHIKR[0];
+  const def = DHIKR.find((x) => x.id === ts.dhikr) ?? DHIKR[0];
+  const d = dhikrView(def, lang.value);
   const [burst, setBurst] = useState(0);
+  const [picking, setPicking] = useState(false);
   const reached = ts.target > 0 && ts.count > 0 && ts.count % ts.target === 0;
   const R = 46;
   const C = 2 * Math.PI * R;
   const frac = ts.target ? (ts.count % ts.target || (ts.count ? ts.target : 0)) / ts.target : 0;
+  const long = d.ar.length > 40;
 
   const tap = () => {
     const day = today.value;
@@ -37,19 +83,18 @@ export function Tasbih() {
       <section class="block top">
         <PageHead label={t('toolsLabel')} title={t('toolTasbih')} />
 
-        <div class="chip-scroll" role="radiogroup" aria-label={t('toolTasbih')}>
-          {DHIKR.map((x) => (
-            <button key={x.id} role="radio" aria-checked={x.id === d.id} class={`dhikr-chip ${x.id === d.id ? 'on' : ''}`}
-              onClick={() => update((s) => void ((s.tasbih.dhikr = x.id), (s.tasbih.count = 0)))}>
-              <span lang="ar" dir="rtl">{x.ar}</span>
-            </button>
-          ))}
-        </div>
+        <button class="card dhikr-pick" onClick={() => setPicking(true)}>
+          <Icon name="beads" size={20} />
+          <span dir="ltr">{d.label}</span>
+          <span class="dhikr-pick-cta">{t('chooseDhikr')}</span>
+          <Icon name="chevron" size={16} flip />
+        </button>
 
         <div class="dhikr-now">
-          <p class="dhikr-ar" lang="ar" dir="rtl">{d.ar}</p>
+          <p class={`dhikr-ar ${long ? 'long' : ''}`} lang="ar" dir="rtl">{d.ar}</p>
           <p class="dhikr-tr" dir="ltr">{d.translit}</p>
-          <p class="dhikr-mean">{tl(d.meaning)}</p>
+          <p class="dhikr-mean">{d.meaning}</p>
+          {d.source && <p class="dhikr-src"><bdi>{d.source}</bdi></p>}
         </div>
 
         <button class={`bead ${reached ? 'reached' : ''}`} onClick={tap} aria-label={`${d.translit}: ${ts.count}`}>
@@ -61,6 +106,13 @@ export function Tasbih() {
           <span class="bead-target">{ts.target ? `/ ${num(ts.target)}` : '∞'}</span>
         </button>
         <p class="tap-hint">{reached ? t('targetReached', { n: ts.count }) : t('tapToCount')}</p>
+
+        {d.virtue && (
+          <div class="tip virtue">
+            <Icon name="sparkle" size={18} />
+            <span>{d.virtue}</span>
+          </div>
+        )}
 
         <div class="card setting">
           <div class="setting-head">
@@ -85,6 +137,7 @@ export function Tasbih() {
           </div>
         </div>
       </section>
+      {picking && <Picker current={def.id} onClose={() => setPicking(false)} />}
     </div>
   );
 }

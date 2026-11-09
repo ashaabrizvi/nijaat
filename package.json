@@ -1,8 +1,8 @@
 {
   "name": "dar-e-nijaat",
   "private": true,
-  "version": "1.1.0",
-  "description": "Dar-e-Nijaat — the door of return. A gentle, private companion for tawbah, salah and walking back to Allah.",
+  "version": "1.2.0",
+  "description": "Dar-e-Nijaat, the door of return. A gentle, private companion for tawbah, salah and walking back to Allah.",
   "type": "module",
   "scripts": {
     "dev": "vite",

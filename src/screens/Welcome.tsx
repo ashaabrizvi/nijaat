@@ -9,8 +9,8 @@ const SLIDES: { title: L; body: L }[] = [
   {
     title: { en: 'Welcome to Dar-e-Nijaat', ur: 'درِ نجات میں خوش آمدید' },
     body: {
-      en: 'The door of return. A quiet place to walk back to Allah — one gentle step at a time.',
-      ur: 'لوٹنے کا دروازہ۔ اللہ کی طرف واپسی کی ایک پُرسکون جگہ — ایک نرم قدم، ایک وقت میں۔',
+      en: 'The door of return. A quiet place to walk back to Allah, one gentle step at a time.',
+      ur: 'لوٹنے کا دروازہ۔ اللہ کی طرف واپسی کی ایک پُرسکون جگہ، ایک نرم قدم، ایک وقت میں۔',
     },
   },
   {
@@ -23,8 +23,8 @@ const SLIDES: { title: L; body: L }[] = [
   {
     title: { en: 'No perfection required', ur: 'کامل ہونا ضروری نہیں' },
     body: {
-      en: 'Just sincerity. No account, no tracking — everything stays on your phone, between you and Allah.',
-      ur: 'بس اخلاص۔ نہ اکاؤنٹ، نہ ٹریکنگ — سب کچھ آپ کے فون پر رہتا ہے، آپ اور اللہ کے درمیان۔',
+      en: 'Just sincerity. No account, no tracking. Everything stays on your phone, between you and Allah.',
+      ur: 'بس اخلاص۔ نہ اکاؤنٹ، نہ ٹریکنگ۔ سب کچھ آپ کے فون پر رہتا ہے، آپ اور اللہ کے درمیان۔',
     },
   },
 ];
