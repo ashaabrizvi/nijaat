@@ -11,7 +11,7 @@ const lit = (day: boolean[] | undefined) => !!day && day.some(Boolean);
 
 /**
  * A merciful streak: a day counts when at least one lantern is lit, and a
- * single missed day never breaks the path — only two missed days in a row do.
+ * single missed day never breaks the path: only two missed days in a row do.
  * Today is still "open", so an unlit today doesn't count as missed.
  */
 export function computeStreak(days: Record<string, boolean[]>, today: string): StreakInfo {

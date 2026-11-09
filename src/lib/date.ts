@@ -10,7 +10,7 @@ export function addDays(key: string, delta: number): string {
   return dateKey(new Date(y, m - 1, d + delta));
 }
 
-/** Days since a fixed epoch — used to rotate the ayah of the day. */
+/** Days since a fixed epoch: used to rotate the ayah of the day. */
 export function dayNumber(key: string): number {
   const [y, m, d] = key.split('-').map(Number);
   return Math.floor(Date.UTC(y, m - 1, d) / 86_400_000);

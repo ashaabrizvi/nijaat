@@ -1,0 +1,106 @@
+[
+  {
+    "id": "musa-faqir",
+    "surah": 28,
+    "from": 24,
+    "to": 24,
+    "surahName": {
+      "en": "Al-Qasas",
+      "ar": "القصص"
+    },
+    "ar": "رَبِّ إِنِّي لِمَآ أَنزَلۡتَ إِلَيَّ مِنۡ خَيۡرࣲ فَقِيرࣱ",
+    "en": "My Lord, indeed I am, for whatever good You would send down to me, in need.",
+    "ur": "پروردگار، جو خیر بھی تو مجھ پر نازل کر دے میں اس کا محتاج ہوں۔"
+  },
+  {
+    "id": "yunus",
+    "surah": 21,
+    "from": 87,
+    "to": 87,
+    "surahName": {
+      "en": "Al-Anbya",
+      "ar": "الأنبياء"
+    },
+    "ar": "لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+    "en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
+    "ur": "نہیں ہے کوئی خدا مگر تُو، پاک ہے تیری ذات، بے شک میں نے قصور کیا۔"
+  },
+  {
+    "id": "hasbuna",
+    "surah": 3,
+    "from": 173,
+    "to": 173,
+    "surahName": {
+      "en": "Ali 'Imran",
+      "ar": "آل عمران"
+    },
+    "ar": "حَسۡبُنَا ٱللَّهُ وَنِعۡمَ ٱلۡوَكِيلُ",
+    "en": "Sufficient for us is Allah, and [He is] the best Disposer of affairs.",
+    "ur": "ہمارے لیے اللہ کافی ہے اور وہی بہترین کارسا ز ہے۔"
+  },
+  {
+    "id": "hasbiya",
+    "surah": 9,
+    "from": 129,
+    "to": 129,
+    "surahName": {
+      "en": "At-Tawbah",
+      "ar": "التوبة"
+    },
+    "ar": "حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ",
+    "en": "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+    "ur": "میرے لیے اللہ بس کرتا ہے، کوئی معبود نہیں مگر وہ، اُسی پر میں نے بھروسہ کیا اور وہ مالک ہے عرش عظیم کا۔"
+  },
+  {
+    "id": "atina",
+    "surah": 2,
+    "from": 201,
+    "to": 201,
+    "surahName": {
+      "en": "Al-Baqarah",
+      "ar": "البقرة"
+    },
+    "ar": "رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةࣰ وَفِي ٱلۡأٓخِرَةِ حَسَنَةࣰ وَقِنَا عَذَابَ ٱلنَّارِ",
+    "en": "Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.",
+    "ur": "اے ہمارے رب! ہمیں دنیا میں بھی بھلائی دے اور آخرت میں بھی بھلائی اور آگ کے عذاب سے ہمیں بچا۔"
+  },
+  {
+    "id": "warham",
+    "surah": 23,
+    "from": 118,
+    "to": 118,
+    "surahName": {
+      "en": "Al-Mu'minun",
+      "ar": "المؤمنون"
+    },
+    "ar": "رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّـٰحِمِينَ",
+    "en": "My Lord, forgive and have mercy, and You are the best of the merciful.",
+    "ur": "میرے رب درگزر فرما، اور رحم کر، اور تو سب رحیموں سے اچھا رحیم ہے۔"
+  },
+  {
+    "id": "zidni",
+    "surah": 20,
+    "from": 114,
+    "to": 114,
+    "surahName": {
+      "en": "Taha",
+      "ar": "طه"
+    },
+    "ar": "رَّبِّ زِدۡنِي عِلۡمࣰا",
+    "en": "My Lord, increase me in knowledge.",
+    "ur": "اے پروردگار مجھے مزید علم عطا کر۔"
+  },
+  {
+    "id": "zalamna",
+    "surah": 7,
+    "from": 23,
+    "to": 23,
+    "surahName": {
+      "en": "Al-A'raf",
+      "ar": "الأعراف"
+    },
+    "ar": "رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ",
+    "en": "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",
+    "ur": "اے رب، ہم نے اپنے اوپر ستم کیا، اب اگر تو نے ہم سے در گزر نہ فرمایا اور رحم نہ کیا تو یقیناً ہم تباہ ہو جائیں گے۔"
+  }
+]

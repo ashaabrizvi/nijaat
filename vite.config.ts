@@ -18,7 +18,7 @@ export default defineConfig({
         name: 'Dar-e-Nijaat',
         short_name: 'Dar-e-Nijaat',
         description:
-          'The door of return. A gentle, private companion for tawbah, salah, Qur’an and walking back to Allah — in English and Urdu.',
+          'The door of return. A gentle, private companion for tawbah, salah, Qur’an and walking back to Allah, in English and Urdu.',
         lang: 'en',
         dir: 'auto',
         start_url: './',

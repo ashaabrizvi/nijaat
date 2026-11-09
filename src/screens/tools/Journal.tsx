@@ -83,8 +83,8 @@ function exportAll(entries: JournalEntry[]) {
       const m = MOODS.find((x) => x.id === e.mood);
       return `${fmt(e.at)}${m ? ` · ${m.emoji} ${tl(m.name)}` : ''}\n${e.prompt ? `“${e.prompt}”\n` : ''}\n${e.text}\n`;
     })
-    .join('\n— — —\n\n');
-  const blob = new Blob([`Dar-e-Nijaat — ${t('toolJournal')}\n\n${body}`], { type: 'text/plain;charset=utf-8' });
+    .join('\n* * *\n\n');
+  const blob = new Blob([`Dar-e-Nijaat · ${t('toolJournal')}\n\n${body}`], { type: 'text/plain;charset=utf-8' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = `dar-e-nijaat-journal-${new Date().toISOString().slice(0, 10)}.txt`;

@@ -12,6 +12,6 @@ export const DAILY: DailyItem[] = [
 export const REMEMBER: L[] = [
   { en: 'Allah’s mercy is endless.', ur: 'اللہ کی رحمت کی کوئی حد نہیں۔' },
   { en: 'Small, steady steps lead to lasting change.', ur: 'چھوٹے مگر مسلسل قدم دیرپا تبدیلی لاتے ہیں۔' },
-  { en: 'Make dua — Allah guides whom He wills.', ur: 'دعا کریں — اللہ جسے چاہے ہدایت دیتا ہے۔' },
+  { en: 'Make dua. Allah guides whom He wills.', ur: 'دعا کریں، اللہ جسے چاہے ہدایت دیتا ہے۔' },
   { en: 'You don’t have to be perfect, just sincere.', ur: 'کامل ہونا ضروری نہیں، بس مخلص ہونا ضروری ہے۔' },
 ];

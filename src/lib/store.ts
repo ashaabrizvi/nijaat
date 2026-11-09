@@ -146,7 +146,7 @@ effect(() => {
   try {
     localStorage.setItem(KEY, JSON.stringify(state.value));
   } catch {
-    /* private mode / storage full — the app still works for this session */
+    /* private mode / storage full: the app still works for this session */
   }
 });
 

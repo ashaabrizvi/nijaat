@@ -22,7 +22,7 @@ export const S_TOOLS = {
   mins: { en: '{m} min', ur: '{m} منٹ' },
   nowTime: { en: 'It’s time for {p}', ur: '{p} کا وقت ہو گیا' },
   setupPrayer: { en: 'Set up prayer times', ur: 'نماز کے اوقات ترتیب دیں' },
-  setupPrayerSub: { en: 'Pick your city — your location never leaves your phone.', ur: 'اپنا شہر منتخب کریں — آپ کا مقام آپ کے فون سے باہر نہیں جاتا۔' },
+  setupPrayerSub: { en: 'Pick your city. Your location never leaves your phone.', ur: 'اپنا شہر منتخب کریں۔ آپ کا مقام آپ کے فون سے باہر نہیں جاتا۔' },
   useMyLocation: { en: 'Use my location', ur: 'میرا مقام استعمال کریں' },
   myLocation: { en: 'My location', ur: 'میرا مقام' },
   locating: { en: 'Finding you…', ur: 'مقام معلوم ہو رہا ہے…' },
@@ -56,11 +56,12 @@ export const S_TOOLS = {
   notifNightBody: { en: 'Astaghfirullah. End the day with Him.', ur: 'استغفراللہ۔ دن کا اختتام اُس کے ساتھ۔' },
 
   // Tasbih
+  chooseDhikr: { en: 'Choose dhikr', ur: 'ذکر منتخب کریں' },
   tapToCount: { en: 'Tap anywhere on the bead', ur: 'دانے پر کہیں بھی چھوئیں' },
   target: { en: 'Target', ur: 'ہدف' },
   noTarget: { en: '∞', ur: '∞' },
   resetCount: { en: 'Reset count', ur: 'گنتی صفر کریں' },
-  targetReached: { en: 'MashaAllah — {n} complete', ur: 'ماشاءاللہ — {n} مکمل' },
+  targetReached: { en: 'MashaAllah! {n} complete', ur: 'ماشاءاللہ! {n} مکمل' },
   todayDhikr: { en: 'Today: {n}', ur: 'آج: {n}' },
   lifetimeDhikr: { en: 'All time: {n}', ur: 'کل: {n}' },
 
@@ -114,13 +115,4 @@ export const MOODS: { id: string; emoji: string; name: L }[] = [
   { id: 'peaceful', emoji: '🕊️', name: { en: 'At peace', ur: 'پُرسکون' } },
   { id: 'heavy', emoji: '🌧️', name: { en: 'Heavy', ur: 'بوجھل' } },
   { id: 'struggling', emoji: '🌊', name: { en: 'Struggling', ur: 'مشکل میں' } },
-];
-
-export const DHIKR: { id: string; ar: string; translit: string; meaning: L }[] = [
-  { id: 'subhanallah', ar: 'سُبْحَانَ اللَّهِ', translit: 'SubḥānAllāh', meaning: { en: 'Glory be to Allah', ur: 'اللہ پاک ہے' } },
-  { id: 'alhamdulillah', ar: 'الْحَمْدُ لِلَّهِ', translit: 'Alḥamdulillāh', meaning: { en: 'All praise is for Allah', ur: 'تمام تعریفیں اللہ کے لیے ہیں' } },
-  { id: 'allahuakbar', ar: 'اللَّهُ أَكْبَرُ', translit: 'Allāhu Akbar', meaning: { en: 'Allah is the Greatest', ur: 'اللہ سب سے بڑا ہے' } },
-  { id: 'astaghfirullah', ar: 'أَسْتَغْفِرُ اللَّهَ', translit: 'Astaghfirullāh', meaning: { en: 'I seek Allah’s forgiveness', ur: 'میں اللہ سے بخشش مانگتا ہوں' } },
-  { id: 'tahlil', ar: 'لَا إِلَٰهَ إِلَّا اللَّهُ', translit: 'Lā ilāha illallāh', meaning: { en: 'There is no god but Allah', ur: 'اللہ کے سوا کوئی معبود نہیں' } },
-  { id: 'salawat', ar: 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ', translit: 'Allāhumma ṣalli ʿalā Muḥammad', meaning: { en: 'O Allah, send blessings upon Muhammad', ur: 'اے اللہ! محمد ﷺ پر رحمت نازل فرما' } },
 ];

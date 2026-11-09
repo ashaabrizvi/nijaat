@@ -1,10 +1,10 @@
 // Generates src/content/ayat.generated.json from the `quran-json` package.
 //
-// Every ayah in the app comes from this file — Qur'anic text is never typed
+// Every ayah in the app comes from this file: Qur'anic text is never typed
 // by hand. Sources (see README):
-//   Arabic  — Uthmani text, The Noble Qur'an Encyclopedia (quranenc.com)
-//   English — Saheeh International (tanzil.net)
-//   Urdu    — Abul A'la Maududi (tanzil.net)
+//   Arabic : Uthmani text, The Noble Qur'an Encyclopedia (quranenc.com)
+//   English: Saheeh International (tanzil.net)
+//   Urdu   : Abul A'la Maududi (tanzil.net)
 //
 // Run: npm run content:ayat
 
@@ -23,7 +23,7 @@ const tr = JSON.parse(readFileSync(join(pkgDir, 'dist/quran_transliteration.json
 
 // id: stable key used by the app. ref: "surah:from[-to]". tags: where it is used.
 const SELECTION = [
-  // Mercy & return — the daily pool
+  // Mercy & return: the daily pool
   { id: 'zumar-53', ref: '39:53', tags: ['daily', 'hero'] },
   { id: 'baqarah-186', ref: '2:186', tags: ['daily'] },
   { id: 'hijr-49', ref: '15:49', tags: ['daily'] },
@@ -66,12 +66,20 @@ const SELECTION = [
   { id: 'muminun-118', ref: '23:118', tags: ['dua'] },
   { id: 'kahf-10', ref: '18:10', tags: ['dua'] },
   { id: 'ibrahim-41', ref: '14:41', tags: ['dua'] },
+  { id: 'qasas-24', ref: '28:24', tags: ['dua'] },
 ];
 
 const AR_DIGITS = '٠١٢٣٤٥٦٧٨٩';
 const toArabicDigits = (n) => String(n).replace(/\d/g, (d) => AR_DIGITS[+d]);
 // Strip pause/section ornaments that don't belong mid-card (rub el hizb, sajdah mark).
 const clean = (s) => s.replace(/[۞۩]/g, '').replace(/\s+/g, ' ').trim();
+// The QuranEnc text follows the King Fahd (KFGQPC) font encoding, which uses
+// U+0657 / U+065E / U+0656 for the *open* tanween marks (fathatan /
+// dammatan / kasratan). Standard Unicode has dedicated characters for these
+// (U+08F0 / U+08F1 / U+08F2); map them so any Qur'an font (Amiri Quran here)
+// draws the right mark instead of an inverted damma / subscript alef / tofu.
+const OPEN_TANWEEN = { '\u0657': '\u08F0', '\u065E': '\u08F1', '\u0656': '\u08F2' };
+const arabic = (s) => clean(s).replace(/[\u0656\u0657\u065E]/g, (c) => OPEN_TANWEEN[c]);
 // Source translations omit the closing full stop; add one so joined ranges read well.
 const sentence = (s, stop) => (/[.!?"'”’)۔؟]$/.test(s) ? s : s + stop);
 
@@ -86,7 +94,7 @@ for (const sel of SELECTION) {
     const ve = surahEn.verses[v - 1];
     const vu = surahUr.verses[v - 1];
     if (!ve || ve.id !== v || vu.id !== v) throw new Error(`Missing ${s}:${v}`);
-    ar.push(`${clean(ve.text)}\u00A0﴿${toArabicDigits(v)}﴾`);
+    ar.push(`${arabic(ve.text)}\u00A0﴿${toArabicDigits(v)}﴾`);
     tEn.push(sentence(clean(ve.translation), sel.q && v === to ? '?' : '.'));
     tTr.push(tr[Number(s) - 1].verses[v - 1].transliteration.trim().replace(/AA/g, 'ʿ')); // Tanzil writes ʿayn as AA
     tUr.push(sentence(clean(vu.translation), sel.q && v === to ? '؟' : '۔'));
@@ -109,3 +117,48 @@ const target = join(here, '../src/content/ayat.generated.json');
 writeFileSync(target, JSON.stringify(out, null, 2) + '\n');
 console.log(`Wrote ${out.length} ayat → ${target}`);
 for (const a of out) console.log(`${a.surah}:${a.from}${a.to !== a.from ? '-' + a.to : ''}`.padEnd(9), String(a.en.length).padStart(4), a.en.slice(0, 90));
+
+// ---------------------------------------------------------------------------
+// Excerpts: the dua/dhikr phrase inside a longer verse (used by the tasbih).
+// Each piece is cut from the source text at a start marker, so nothing is
+// retyped. `ar` keeps the marker; `en`/`ur` start right after their marker.
+const EXCERPTS = [
+  { id: 'musa-faqir', ref: '28:24', ar: 'رَبِّ إِنِّي', en: '"', ur: '"' },
+  { id: 'yunus', ref: '21:87', ar: 'لَّآ إِلَٰهَ', en: '"', ur: '"' },
+  { id: 'hasbuna', ref: '3:173', ar: 'حَسۡبُنَا', en: 'they said, "', ur: 'جواب دیا کہ ' },
+  { id: 'hasbiya', ref: '9:129', ar: 'حَسۡبِيَ', en: 'say, "', ur: '"' },
+  { id: 'atina', ref: '2:201', ar: 'رَبَّنَآ', en: '"', ur: 'کہتا ہے کہ ' },
+  { id: 'warham', ref: '23:118', ar: 'رَّبِّ', en: '"', ur: '"' },
+  { id: 'zidni', ref: '20:114', ar: 'رَّبِّ زِدۡنِي', en: 'say, "', ur: 'دُعا کرو کہ ' },
+  { id: 'zalamna', ref: '7:23', ar: 'رَبَّنَا', en: '"', ur: '"' },
+];
+
+// Compare in NFC so diacritic order (e.g. shadda + kasra) can't break a match;
+// NFC is canonically equivalent, so the rendered text is identical.
+const cut = (raw, rawMarker, keep, id) => {
+  const text = raw.normalize('NFC');
+  const marker = rawMarker.normalize('NFC');
+  const i = text.indexOf(marker);
+  if (i < 0) throw new Error(`Marker not found for ${id}: ${marker}`);
+  return text.slice(keep ? i : i + marker.length).trim();
+};
+
+const excerpts = EXCERPTS.map((x) => {
+  const [s, v] = x.ref.split(':').map(Number);
+  const ve = en[s - 1].verses[v - 1];
+  const vu = ur[s - 1].verses[v - 1];
+  return {
+    id: x.id,
+    surah: s,
+    from: v,
+    to: v,
+    surahName: { en: en[s - 1].transliteration, ar: en[s - 1].name },
+    ar: cut(arabic(ve.text), x.ar, true, x.id),
+    en: sentence(cut(clean(ve.translation), x.en, false, x.id), '.'),
+    ur: sentence(cut(clean(vu.translation), x.ur, false, x.id), '۔'),
+  };
+});
+const exTarget = join(here, '../src/content/excerpts.generated.json');
+writeFileSync(exTarget, JSON.stringify(excerpts, null, 2) + '\n');
+console.log(`Wrote ${excerpts.length} excerpts → ${exTarget}`);
+for (const x of excerpts) console.log(x.id.padEnd(11), x.ar, '|', x.en, '|', x.ur);

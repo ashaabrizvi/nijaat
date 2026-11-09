@@ -7,7 +7,7 @@ import { hadith } from '../content/hadith';
 import { t, tl } from '../lib/i18n';
 import { go } from '../lib/router';
 
-/** "What is Nijaat?" — the meaning behind the trend. */
+/** "What is Nijaat?": the meaning behind the trend. */
 export function Nijaat() {
   return (
     <div class="screen nijaat">
