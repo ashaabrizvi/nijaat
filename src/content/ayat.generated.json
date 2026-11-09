@@ -11,6 +11,7 @@
     "ar": "قُلۡ يَٰعِبَادِيَ ٱلَّذِينَ أَسۡرَفُواْ عَلَىٰٓ أَنفُسِهِمۡ لَا تَقۡنَطُواْ مِن رَّحۡمَةِ ٱللَّهِۚ إِنَّ ٱللَّهَ يَغۡفِرُ ٱلذُّنُوبَ جَمِيعًاۚ إِنَّهُۥ هُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ ﴿٥٣﴾",
     "en": "Say, \"O My servants who have transgressed against themselves [by sinning], do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.",
     "ur": "(اے نبیؐ) کہہ دو کہ اے میرے بندو، جنہوں نے اپنی جانوں پر زیادتی کی ہے، اللہ کی رحمت سے مایوس نہ ہو جاؤ، یقیناً اللہ سارے گناہ معاف کر دیتا ہے، وہ تو غفور و رحیم ہے۔",
+    "translit": "Qul ya ʿibadiya allatheena asrafoo ʿala anfusihim la taqnatoo min rahmati Allahi inna Allaha yaghfiru alththunooba jameeʿan innahu huwa alghafooru alrraheemu",
     "tags": [
       "daily",
       "hero"
@@ -28,6 +29,7 @@
     "ar": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌۖ أُجِيبُ دَعۡوَةَ ٱلدَّاعِ إِذَا دَعَانِۖ فَلۡيَسۡتَجِيبُواْ لِي وَلۡيُؤۡمِنُواْ بِي لَعَلَّهُمۡ يَرۡشُدُونَ ﴿١٨٦﴾",
     "en": "And when My servants ask you, [O Muhammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me [by obedience] and believe in Me that they may be [rightly] guided.",
     "ur": "اور اے نبیؐ، میرے بندے اگر تم سے میرے متعلق پوچھیں، تو اُنہیں بتا دو کہ میں ان سے قریب ہی ہوں پکارنے والا جب مجھے پکارتا ہے، میں اُس کی پکار سنتا اور جواب دیتا ہوں لہٰذا انہیں چاہیے کہ میری دعوت پر لبیک کہیں اور مجھ پر ایمان لائیں یہ بات تم اُنہیں سنا دو، شاید کہ وہ راہ راست پالیں۔",
+    "translit": "Waitha saalaka ʿibadee ʿannee fainnee qareebun ojeebu daʿwata alddaʿi itha daʿani falyastajeeboo lee walyuminoo bee laʿallahum yarshudoona",
     "tags": [
       "daily"
     ]
@@ -44,6 +46,7 @@
     "ar": "نَبِّئۡ عِبَادِيٓ أَنِّيٓ أَنَا ٱلۡغَفُورُ ٱلرَّحِيمُ ﴿٤٩﴾",
     "en": "[O Muhammad], inform My servants that it is I who am the Forgiving, the Merciful.",
     "ur": "اے نبیؐ، میرے بندوں کو خبر دے دو کہ میں بہت درگزر کرنے والا اور رحیم ہوں۔",
+    "translit": "Nabbi ʿibadee annee ana alghafooru alrraheemu",
     "tags": [
       "daily"
     ]
@@ -60,6 +63,7 @@
     "ar": "وَٱلَّذِينَ إِذَا فَعَلُواْ فَٰحِشَةً أَوۡ ظَلَمُوٓاْ أَنفُسَهُمۡ ذَكَرُواْ ٱللَّهَ فَٱسۡتَغۡفَرُواْ لِذُنُوبِهِمۡ وَمَن يَغۡفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمۡ يُصِرُّواْ عَلَىٰ مَا فَعَلُواْ وَهُمۡ يَعۡلَمُونَ ﴿١٣٥﴾",
     "en": "And those who, when they commit an immorality or wrong themselves [by transgression], remember Allah and seek forgiveness for their sins - and who can forgive sins except Allah? - and [who] do not persist in what they have done while they know.",
     "ur": "اور جن کا حال یہ ہے کہ اگر کبھی کوئی فحش کام ان سے سرزد ہو جاتا ہے یا کسی گناہ کا ارتکاب کر کے وہ اپنے اوپر ظلم کر بیٹھتے ہیں تو معاً اللہ انہیں یاد آ جاتا ہے اور اس سے وہ اپنے قصوروں کی معافی چاہتے ہیں کیونکہ اللہ کے سوا اور کون ہے جو گناہ معاف کرسکتا ہو او ر وہ دیدہ و دانستہ اپنے کیے پر اصرار نہیں کرتے۔",
+    "translit": "Waallatheena itha faʿaloo fahishatan aw thalamoo anfusahum thakaroo Allaha faistaghfaroo lithunoobihim waman yaghfiru alththunooba illa Allahu walam yusirroo ʿala ma faʿaloo wahum yaʿlamoona",
     "tags": [
       "daily"
     ]
@@ -76,6 +80,7 @@
     "ar": "وَمَن يَعۡمَلۡ سُوٓءًا أَوۡ يَظۡلِمۡ نَفۡسَهُۥ ثُمَّ يَسۡتَغۡفِرِ ٱللَّهَ يَجِدِ ٱللَّهَ غَفُورٗا رَّحِيمٗا ﴿١١٠﴾",
     "en": "And whoever does a wrong or wrongs himself but then seeks forgiveness of Allah will find Allah Forgiving and Merciful.",
     "ur": "اگر کوئی شخص برا فعل کر گزرے یا اپنے نفس پر ظلم کر جائے اور اس کے بعد اللہ سے درگزر کی درخواست کرے تو اللہ کو درگزر کرنے والا اور رحیم پائے گا۔",
+    "translit": "Waman yaʿmal sooan aw yathlim nafsahu thumma yastaghfiri Allaha yajidi Allaha ghafooran raheeman",
     "tags": [
       "daily",
       "tawbah"
@@ -93,6 +98,7 @@
     "ar": "إِلَّا مَن تَابَ وَءَامَنَ وَعَمِلَ عَمَلٗا صَٰلِحٗا فَأُوْلَـٰٓئِكَ يُبَدِّلُ ٱللَّهُ سَيِّـَٔاتِهِمۡ حَسَنَٰتٖۗ وَكَانَ ٱللَّهُ غَفُورٗا رَّحِيمٗا ﴿٧٠﴾",
     "en": "Except for those who repent, believe and do righteous work. For them Allah will replace their evil deeds with good. And ever is Allah Forgiving and Merciful.",
     "ur": "اِلّا یہ کہ کوئی (ان گناہوں کے بعد) توبہ کر چکا ہو اور ایمان لا کر عمل صالح کرنے لگا ہو ایسے لوگوں کی برائیوں کو اللہ بھلائیوں سے بدل دے گا اور وہ بڑا غفور رحیم ہے۔",
+    "translit": "Illa man taba waamana waʿamila ʿamalan salihan faolaika yubaddilu Allahu sayyiatihim hasanatin wakana Allahu ghafooran raheeman",
     "tags": [
       "daily"
     ]
@@ -109,6 +115,7 @@
     "ar": "وَٱللَّهُ يُرِيدُ أَن يَتُوبَ عَلَيۡكُمۡ وَيُرِيدُ ٱلَّذِينَ يَتَّبِعُونَ ٱلشَّهَوَٰتِ أَن تَمِيلُواْ مَيۡلًا عَظِيمٗا ﴿٢٧﴾",
     "en": "Allah wants to accept your repentance, but those who follow [their] passions want you to digress [into] a great deviation.",
     "ur": "ہاں، اللہ تو تم پر رحمت کے ساتھ توجہ کرنا چاہتا ہے مگر جو لوگ خود اپنی خواہشات نفس کی پیروی کر رہے ہیں وہ چاہتے ہیں کہ تم راہ راست سے ہٹ کر دور نکل جاؤ۔",
+    "translit": "WaAllahu yureedu an yatooba ʿalaykum wayureedu allatheena yattabiʿoona alshshahawati an tameeloo maylan ʿatheeman",
     "tags": [
       "daily"
     ]
@@ -125,6 +132,7 @@
     "ar": "يُرِيدُ ٱللَّهُ أَن يُخَفِّفَ عَنكُمۡۚ وَخُلِقَ ٱلۡإِنسَٰنُ ضَعِيفٗا ﴿٢٨﴾",
     "en": "And Allah wants to lighten for you [your difficulties]; and mankind was created weak.",
     "ur": "اللہ تم پر سے پابندیوں کو ہلکا کرنا چاہتا ہے کیونکہ انسان کمزور پیدا کیا گیا ہے۔",
+    "translit": "Yureedu Allahu an yukhaffifa ʿankum wakhuliqa alinsanu daʿeefan",
     "tags": [
       "daily"
     ]
@@ -141,6 +149,7 @@
     "ar": "وَقَالَ رَبُّكُمُ ٱدۡعُونِيٓ أَسۡتَجِبۡ لَكُمۡۚ إِنَّ ٱلَّذِينَ يَسۡتَكۡبِرُونَ عَنۡ عِبَادَتِي سَيَدۡخُلُونَ جَهَنَّمَ دَاخِرِينَ ﴿٦٠﴾",
     "en": "And your Lord says, \"Call upon Me; I will respond to you.\" Indeed, those who disdain My worship will enter Hell [rendered] contemptible.",
     "ur": "تمہارا رب کہتا ہے \"مجھے پکارو، میں تمہاری دعائیں قبول کروں گا، جو لوگ گھمنڈ میں آ کر میری عبادت سے منہ موڑتے ہیں، ضرور وہ ذلیل و خوار ہو کر جہنم میں داخل ہوں گے۔",
+    "translit": "Waqala rabbukumu odʿoonee astajib lakum inna allatheena yastakbiroona ʿan ʿibadatee sayadkhuloona jahannama dakhireena",
     "tags": [
       "daily"
     ]
@@ -157,6 +166,7 @@
     "ar": "ٱلَّذِينَ ءَامَنُواْ وَتَطۡمَئِنُّ قُلُوبُهُم بِذِكۡرِ ٱللَّهِۗ أَلَا بِذِكۡرِ ٱللَّهِ تَطۡمَئِنُّ ٱلۡقُلُوبُ ﴿٢٨﴾",
     "en": "Those who have believed and whose hearts are assured by the remembrance of Allah. Unquestionably, by the remembrance of Allah hearts are assured.",
     "ur": "ایسے ہی لوگ ہیں وہ جنہوں نے (اِس نبی کی دعوت کو) مان لیا اور اُن کے دلوں کو اللہ کی یاد سے اطمینان نصیب ہوتا ہے خبردار رہو! اللہ کی یاد ہی وہ چیز ہے جس سے دلوں کو اطمینان نصیب ہوا کرتا ہے۔",
+    "translit": "Allatheena amanoo watatmainnu quloobuhum bithikri Allahi ala bithikri Allahi tatmainnu alquloobu",
     "tags": [
       "daily"
     ]
@@ -173,6 +183,7 @@
     "ar": "فَإِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرًا ﴿٥﴾ إِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرٗا ﴿٦﴾",
     "en": "For indeed, with hardship [will be] ease. Indeed, with hardship [will be] ease.",
     "ur": "پس حقیقت یہ ہے کہ تنگی کے ساتھ فراخی بھی ہے۔ بے شک تنگی کے ساتھ فراخی بھی ہے۔",
+    "translit": "Fainna maʿa alʿusri yusran … Inna maʿa alʿusri yusran",
     "tags": [
       "daily"
     ]
@@ -189,6 +200,7 @@
     "ar": "وَلَقَدۡ خَلَقۡنَا ٱلۡإِنسَٰنَ وَنَعۡلَمُ مَا تُوَسۡوِسُ بِهِۦ نَفۡسُهُۥۖ وَنَحۡنُ أَقۡرَبُ إِلَيۡهِ مِنۡ حَبۡلِ ٱلۡوَرِيدِ ﴿١٦﴾",
     "en": "And We have already created man and know what his soul whispers to him, and We are closer to him than [his] jugular vein.",
     "ur": "ہم نے انسان کو پیدا کیا ہے اور اس کے دل میں ابھرنے والے وسوسوں تک کو ہم جانتے ہیں ہم اس کی رگ گردن سے بھی زیادہ اُس سے قریب ہیں۔",
+    "translit": "Walaqad khalaqna alinsana wanaʿlamu ma tuwaswisu bihi nafsuhu wanahnu aqrabu ilayhi min habli alwareedi",
     "tags": [
       "daily"
     ]
@@ -205,6 +217,7 @@
     "ar": "فَٱذۡكُرُونِيٓ أَذۡكُرۡكُمۡ وَٱشۡكُرُواْ لِي وَلَا تَكۡفُرُونِ ﴿١٥٢﴾",
     "en": "So remember Me; I will remember you. And be grateful to Me and do not deny Me.",
     "ur": "لہٰذا تم مجھے یاد رکھو، میں تمہیں یاد رکھوں گا اور میرا شکر ادا کرو، کفران نعمت نہ کرو۔",
+    "translit": "Faothkuroonee athkurkum waoshkuroo lee wala takfurooni",
     "tags": [
       "daily"
     ]
@@ -221,6 +234,7 @@
     "ar": "قُلۡ إِن كُنتُمۡ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِي يُحۡبِبۡكُمُ ٱللَّهُ وَيَغۡفِرۡ لَكُمۡ ذُنُوبَكُمۡۚ وَٱللَّهُ غَفُورٞ رَّحِيمٞ ﴿٣١﴾",
     "en": "Say, [O Muhammad], \"If you should love Allah, then follow me, [so] Allah will love you and forgive you your sins. And Allah is Forgiving and Merciful.",
     "ur": "اے نبیؐ! لوگوں سے کہہ دو کہ، \"اگر تم حقیقت میں اللہ سے محبت رکھتے ہو، تو میر ی پیروی اختیار کرو، اللہ تم سے محبت کرے گا اور تمہاری خطاؤں سے درگزر فرمائے گا وہ بڑا معاف کرنے والا اور رحیم ہے۔",
+    "translit": "Qul in kuntum tuhibboona Allaha faittabiʿoonee yuhbibkumu Allahu wayaghfir lakum thunoobakum waAllahu ghafoorun raheemun",
     "tags": [
       "daily"
     ]
@@ -237,6 +251,7 @@
     "ar": "وَإِنِّي لَغَفَّارٞ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَٰلِحٗا ثُمَّ ٱهۡتَدَىٰ ﴿٨٢﴾",
     "en": "But indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then continues in guidance.",
     "ur": "البتہ جو توبہ کر لے اور ایمان لائے اور نیک عمل کرے، پھر سیدھا چلتا رہے، اُس کے لیے میں بہت درگزر کرنے والا ہوں۔",
+    "translit": "Wainnee laghaffarun liman taba waamana waʿamila salihan thumma ihtada",
     "tags": [
       "daily"
     ]
@@ -253,6 +268,7 @@
     "ar": "وَهُوَ ٱلَّذِي يَقۡبَلُ ٱلتَّوۡبَةَ عَنۡ عِبَادِهِۦ وَيَعۡفُواْ عَنِ ٱلسَّيِّـَٔاتِ وَيَعۡلَمُ مَا تَفۡعَلُونَ ﴿٢٥﴾",
     "en": "And it is He who accepts repentance from his servants and pardons misdeeds, and He knows what you do.",
     "ur": "وہی ہے جو اپنے بندوں سے توبہ قبول کرتا ہے اور برائیوں سے درگزر کرتا ہے، حالانکہ تم لوگوں کے سب افعال کا اُ سے علم ہے۔",
+    "translit": "Wahuwa allathee yaqbalu alttawbata ʿan ʿibadihi wayaʿfoo ʿani alssayyiati wayaʿlamu ma tafʿaloona",
     "tags": [
       "daily"
     ]
@@ -269,6 +285,7 @@
     "ar": "يَٰبَنِيَّ ٱذۡهَبُواْ فَتَحَسَّسُواْ مِن يُوسُفَ وَأَخِيهِ وَلَا تَاْيۡـَٔسُواْ مِن رَّوۡحِ ٱللَّهِۖ إِنَّهُۥ لَا يَاْيۡـَٔسُ مِن رَّوۡحِ ٱللَّهِ إِلَّا ٱلۡقَوۡمُ ٱلۡكَٰفِرُونَ ﴿٨٧﴾",
     "en": "O my sons, go and find out about Joseph and his brother and despair not of relief from Allah. Indeed, no one despairs of relief from Allah except the disbelieving people.",
     "ur": "میرے بچو، جا کر یوسفؑ اور اس کے بھائی کی کچھ ٹوہ لگاؤ، اللہ کی رحمت سے مایوس نہ ہو، اس کی رحمت سے تو بس کافر ہی مایوس ہوا کرتے ہیں۔",
+    "translit": "Ya baniyya ithhaboo fatahassasoo min yoosufa waakheehi wala tayasoo min rawhi Allahi innahu la yayasu min rawhi Allahi illa alqawmu alkafiroona",
     "tags": [
       "daily"
     ]
@@ -285,6 +302,7 @@
     "ar": "وَٱلَّذِينَ جَٰهَدُواْ فِينَا لَنَهۡدِيَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِينَ ﴿٦٩﴾",
     "en": "And those who strive for Us - We will surely guide them to Our ways. And indeed, Allah is with the doers of good.",
     "ur": "جو لوگ ہماری خاطر مجاہدہ کریں گے انہیں ہم اپنے راستے دکھائیں گے، اور یقیناً اللہ نیکو کاروں ہی کے ساتھ ہے۔",
+    "translit": "Waallatheena jahadoo feena lanahdiyannahum subulana wainna Allaha lamaʿa almuhsineena",
     "tags": [
       "daily",
       "walk"
@@ -300,8 +318,9 @@
       "ar": "الضحى"
     },
     "ar": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ ﴿٣﴾",
-    "en": "Your Lord has not taken leave of you, [O Muhammad], nor has He detested [you]",
+    "en": "Your Lord has not taken leave of you, [O Muhammad], nor has He detested [you].",
     "ur": "(اے نبیؐ) تمہارے رب نے تم کو ہرگز نہیں چھوڑا اور نہ وہ ناراض ہوا۔",
+    "translit": "Ma waddaʿaka rabbuka wama qala",
     "tags": [
       "daily"
     ]
@@ -318,6 +337,7 @@
     "ar": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱسۡتَعِينُواْ بِٱلصَّبۡرِ وَٱلصَّلَوٰةِۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ ﴿١٥٣﴾",
     "en": "O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.",
     "ur": "اے لوگو جو ایمان لائے ہو، صبر اور نماز سے مدد لو اللہ صبر کرنے والوں کے ساتھ ہے۔",
+    "translit": "Ya ayyuha allatheena amanoo istaʿeenoo bialssabri waalssalati inna Allaha maʿa alssabireena",
     "tags": [
       "daily"
     ]
@@ -334,6 +354,7 @@
     "ar": "مَنۡ عَمِلَ صَٰلِحٗا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنٞ فَلَنُحۡيِيَنَّهُۥ حَيَوٰةٗ طَيِّبَةٗۖ وَلَنَجۡزِيَنَّهُمۡ أَجۡرَهُم بِأَحۡسَنِ مَا كَانُواْ يَعۡمَلُونَ ﴿٩٧﴾",
     "en": "Whoever does righteousness, whether male or female, while he is a believer - We will surely cause him to live a good life, and We will surely give them their reward [in the Hereafter] according to the best of what they used to do.",
     "ur": "جو شخص بھی نیک عمل کرے گا، خواہ وہ مرد ہو یا عورت، بشر طیکہ ہو وہ مومن، اسے ہم دنیا میں پاکیزہ زندگی بسر کرائیں گے اور (آخرت میں) ایسے لوگوں کو ان کے اجر ان کے بہترین اعمال کے مطابق بخشیں گے۔",
+    "translit": "Man ʿamila salihan min thakarin aw ontha wahuwa muminun falanuhyiyannahu hayatan tayyibatan walanajziyannahum ajrahum biahsani ma kanoo yaʿmaloona",
     "tags": [
       "daily"
     ]
@@ -350,6 +371,7 @@
     "ar": "قَالَا رَبَّنَا ظَلَمۡنَآ أَنفُسَنَا وَإِن لَّمۡ تَغۡفِرۡ لَنَا وَتَرۡحَمۡنَا لَنَكُونَنَّ مِنَ ٱلۡخَٰسِرِينَ ﴿٢٣﴾",
     "en": "They said, \"Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.",
     "ur": "دونوں بول اٹھے، \"اے رب، ہم نے اپنے اوپر ستم کیا، اب اگر تو نے ہم سے در گزر نہ فرمایا اور رحم نہ کیا تو یقیناً ہم تباہ ہو جائیں گے۔",
+    "translit": "Qala rabbana thalamna anfusana wain lam taghfir lana watarhamna lanakoonanna mina alkhasireena",
     "tags": [
       "daily",
       "dua"
@@ -367,6 +389,7 @@
     "ar": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبٗا فَظَنَّ أَن لَّن نَّقۡدِرَ عَلَيۡهِ فَنَادَىٰ فِي ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّـٰلِمِينَ ﴿٨٧﴾ فَٱسۡتَجَبۡنَا لَهُۥ وَنَجَّيۡنَٰهُ مِنَ ٱلۡغَمِّۚ وَكَذَٰلِكَ نُـۨجِي ٱلۡمُؤۡمِنِينَ ﴿٨٨﴾",
     "en": "And [mention] the man of the fish, when he went off in anger and thought that We would not decree [anything] upon him. And he called out within the darknesses, \"There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers. So We responded to him and saved him from the distress. And thus do We save the believers.",
     "ur": "اور مچھلی والے کو بھی ہم نے نوازا یاد کرو جبکہ وہ بگڑ کر چلا گیا تھا اور سمجھا تھا کہ ہم اس پر گرفت نہ کریں گے آخر کو اُس نے تاریکیوں میں پکارا \"نہیں ہے کوئی خدا مگر تُو، پاک ہے تیری ذات، بے شک میں نے قصور کیا۔ تب ہم نے اس کی دُعا قبول کی اور غم سے اس کو نجات بخشی، اور اِسی طرح ہم مومنوں کو بچا لیا کرتے ہیں۔",
+    "translit": "Watha alnnooni ith thahaba mughadiban fathanna an lan naqdira ʿalayhi fanada fee alththulumati an la ilaha illa anta subhanaka innee kuntu mina alththalimeena … Faistajabna lahu wanajjaynahu mina alghammi wakathalika nunjee almumineena",
     "tags": [
       "daily",
       "dua",
@@ -385,6 +408,7 @@
     "ar": "قَالَ رَبِّ إِنِّي ظَلَمۡتُ نَفۡسِي فَٱغۡفِرۡ لِي فَغَفَرَ لَهُۥٓۚ إِنَّهُۥ هُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ ﴿١٦﴾",
     "en": "He said, \"My Lord, indeed I have wronged myself, so forgive me,\" and He forgave him. Indeed, He is the Forgiving, the Merciful.",
     "ur": "پھر وہ کہنے لگا \"اے میرے رب، مَیں نے اپنے نفس پر بڑا ظلم کر ڈالا، میری مغفرت فرما دے\" چنانچہ اللہ نے اس کی مغفرت فرما دی، وہ غفور رحیم ہے۔",
+    "translit": "Qala rabbi innee thalamtu nafsee faighfir lee faghafara lahu innahu huwa alghafooru alrraheemu",
     "tags": [
       "daily",
       "dua"
@@ -402,6 +426,7 @@
     "ar": "وَأَقِمِ ٱلصَّلَوٰةَ طَرَفَيِ ٱلنَّهَارِ وَزُلَفٗا مِّنَ ٱلَّيۡلِۚ إِنَّ ٱلۡحَسَنَٰتِ يُذۡهِبۡنَ ٱلسَّيِّـَٔاتِۚ ذَٰلِكَ ذِكۡرَىٰ لِلذَّـٰكِرِينَ ﴿١١٤﴾",
     "en": "And establish prayer at the two ends of the day and at the approach of the night. Indeed, good deeds do away with misdeeds. That is a reminder for those who remember.",
     "ur": "اور دیکھو، نماز قائم کرو دن کے دونوں سروں پر اور کچھ رات گزرنے پر درحقیقت نیکیاں برائیوں کو دور کر دیتی ہیں، یہ ایک یاد دہانی ہے ان لوگوں کے لیے جو خدا کو یاد رکھنے والے ہیں۔",
+    "translit": "Waaqimi alssalata tarafayi alnnahari wazulafan mina allayli inna alhasanati yuthhibna alssayyiati thalika thikra lilththakireena",
     "tags": [
       "daily"
     ]
@@ -418,6 +443,7 @@
     "ar": "وَلَقَدۡ يَسَّرۡنَا ٱلۡقُرۡءَانَ لِلذِّكۡرِ فَهَلۡ مِن مُّدَّكِرٖ ﴿١٧﴾",
     "en": "And We have certainly made the Qur'an easy for remembrance, so is there any who will remember.",
     "ur": "ہم نے اِس قرآن کو نصیحت کے لیے آسان ذریعہ بنا دیا ہے، پھر کیا ہے کوئی نصیحت قبول کرنے والا؟",
+    "translit": "Walaqad yassarna alqurana lilththikri fahal min muddakirin",
     "tags": [
       "daily"
     ]
@@ -434,6 +460,7 @@
     "ar": "وَنُنَزِّلُ مِنَ ٱلۡقُرۡءَانِ مَا هُوَ شِفَآءٞ وَرَحۡمَةٞ لِّلۡمُؤۡمِنِينَ وَلَا يَزِيدُ ٱلظَّـٰلِمِينَ إِلَّا خَسَارٗا ﴿٨٢﴾",
     "en": "And We send down of the Qur'an that which is healing and mercy for the believers, but it does not increase the wrongdoers except in loss.",
     "ur": "ہم اِس قرآن کے سلسلہ تنزیل میں وہ کچھ نازل کر رہے ہیں جو ماننے والوں کے لیے تو شفا اور رحمت ہے، مگر ظالموں کے لیے خسارے کے سوا اور کسی چیز میں اضافہ نہیں کرتا۔",
+    "translit": "Wanunazzilu mina alqurani ma huwa shifaon warahmatun lilmumineena wala yazeedu alththalimeena illa khasaran",
     "tags": [
       "daily",
       "quran"
@@ -451,6 +478,7 @@
     "ar": "يَـٰٓأَيُّهَا ٱلنَّاسُ قَدۡ جَآءَتۡكُم مَّوۡعِظَةٞ مِّن رَّبِّكُمۡ وَشِفَآءٞ لِّمَا فِي ٱلصُّدُورِ وَهُدٗى وَرَحۡمَةٞ لِّلۡمُؤۡمِنِينَ ﴿٥٧﴾",
     "en": "O mankind, there has to come to you instruction from your Lord and healing for what is in the breasts and guidance and mercy for the believers.",
     "ur": "لوگو! تمہارے پاس تمہارے رب کی طرف سے نصیحت آ گئی ہے یہ وہ چیز ہے جو دلوں کے امراض کی شفا ہے اور جو اسے قبول کر لیں ان کے لیے رہنمائی اور رحمت ہے۔",
+    "translit": "Ya ayyuha alnnasu qad jaatkum mawʿithatun min rabbikum washifaon lima fee alssudoori wahudan warahmatun lilmumineena",
     "tags": [
       "daily"
     ]
@@ -465,8 +493,9 @@
       "ar": "البقرة"
     },
     "ar": "وَٱسۡتَعِينُواْ بِٱلصَّبۡرِ وَٱلصَّلَوٰةِۚ وَإِنَّهَا لَكَبِيرَةٌ إِلَّا عَلَى ٱلۡخَٰشِعِينَ ﴿٤٥﴾",
-    "en": "And seek help through patience and prayer, and indeed, it is difficult except for the humbly submissive [to Allah]",
+    "en": "And seek help through patience and prayer, and indeed, it is difficult except for the humbly submissive [to Allah].",
     "ur": "صبر اور نماز سے مدد لو، بیشک نماز ایک سخت مشکل کام ہے۔",
+    "translit": "Waistaʿeenoo bialssabri waalssalati wainnaha lakabeeratun illa ʿala alkhashiʿeena",
     "tags": [
       "daily"
     ]
@@ -483,6 +512,7 @@
     "ar": "إِنَّنِيٓ أَنَا ٱللَّهُ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعۡبُدۡنِي وَأَقِمِ ٱلصَّلَوٰةَ لِذِكۡرِيٓ ﴿١٤﴾",
     "en": "Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer for My remembrance.",
     "ur": "میں ہی اللہ ہوں، میرے سوا کوئی خدا نہیں ہے، پس تو میری بندگی کر اور میری یاد کے لیے نماز قائم کر۔",
+    "translit": "Innanee ana Allahu la ilaha illa ana faoʿbudnee waaqimi alssalata lithikree",
     "tags": [
       "salah"
     ]
@@ -497,8 +527,9 @@
       "ar": "الشمس"
     },
     "ar": "قَدۡ أَفۡلَحَ مَن زَكَّىٰهَا ﴿٩﴾ وَقَدۡ خَابَ مَن دَسَّىٰهَا ﴿١٠﴾",
-    "en": "He has succeeded who purifies it. And he has failed who instills it [with corruption]",
+    "en": "He has succeeded who purifies it. And he has failed who instills it [with corruption].",
     "ur": "یقیناً فلاح پا گیا وہ جس نے نفس کا تزکیہ کیا۔ اور نامراد ہوا وہ جس نے اُس کو دبا دیا۔",
+    "translit": "Qad aflaha man zakkaha … Waqad khaba man dassaha",
     "tags": [
       "leave"
     ]
@@ -515,6 +546,7 @@
     "ar": "وَيَٰقَوۡمِ مَا لِيٓ أَدۡعُوكُمۡ إِلَى ٱلنَّجَوٰةِ وَتَدۡعُونَنِيٓ إِلَى ٱلنَّارِ ﴿٤١﴾",
     "en": "And O my people, how is it that I invite you to salvation while you invite me to the Fire?",
     "ur": "اے قوم، آخر یہ کیا ماجرا ہے کہ میں تو تم لوگوں کو نجات کی طرف بلاتا ہوں اور تم لوگ مجھے آگ کی طرف دعوت دیتے ہو؟",
+    "translit": "Waya qawmi ma lee adʿookum ila alnnajati watadʿoonanee ila alnnari",
     "tags": [
       "essence"
     ]
@@ -531,8 +563,128 @@
     "ar": "فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ ﴿١٣﴾",
     "en": "So which of the favors of your Lord would you deny?",
     "ur": "پس اے جن و انس، تم اپنے رب کی کن کن نعمتوں کو جھٹلاؤ گے؟",
+    "translit": "Fabiayyi alai rabbikuma tukaththibani",
     "tags": [
       "closing"
+    ]
+  },
+  {
+    "id": "imran-8",
+    "surah": 3,
+    "from": 8,
+    "to": 8,
+    "surahName": {
+      "en": "Ali 'Imran",
+      "ar": "آل عمران"
+    },
+    "ar": "رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ ﴿٨﴾",
+    "en": "[Who say], \"Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
+    "ur": "وہ اللہ سے دعا کرتے رہتے ہیں کہ: \"پروردگار! جب تو ہمیں سیدھے رستہ پر لگا چکا ہے، تو پھر کہیں ہمارے دلوں کو کجی میں مبتلا نہ کر دیجیو ہمیں اپنے خزانہ فیض سے رحمت عطا کر کہ تو ہی فیاض حقیقی ہے۔",
+    "translit": "Rabbana la tuzigh quloobana baʿda ith hadaytana wahab lana min ladunka rahmatan innaka anta alwahhabu",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "baqarah-201",
+    "surah": 2,
+    "from": 201,
+    "to": 201,
+    "surahName": {
+      "en": "Al-Baqarah",
+      "ar": "البقرة"
+    },
+    "ar": "وَمِنۡهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ ﴿٢٠١﴾",
+    "en": "But among them is he who says, \"Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.",
+    "ur": "اور کوئی کہتا ہے کہ اے ہمارے رب! ہمیں دنیا میں بھی بھلائی دے اور آخرت میں بھی بھلائی اور آگ کے عذاب سے ہمیں بچا۔",
+    "translit": "Waminhum man yaqoolu rabbana atina fee alddunya hasanatan wafee alakhirati hasanatan waqina ʿathaba alnnari",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "taha-25-28",
+    "surah": 20,
+    "from": 25,
+    "to": 28,
+    "surahName": {
+      "en": "Taha",
+      "ar": "طه"
+    },
+    "ar": "قَالَ رَبِّ ٱشۡرَحۡ لِي صَدۡرِي ﴿٢٥﴾ وَيَسِّرۡ لِيٓ أَمۡرِي ﴿٢٦﴾ وَٱحۡلُلۡ عُقۡدَةٗ مِّن لِّسَانِي ﴿٢٧﴾ يَفۡقَهُواْ قَوۡلِي ﴿٢٨﴾",
+    "en": "[Moses] said, \"My Lord, expand for me my breast [with assurance]. And ease for me my task. And untie the knot from my tongue. That they may understand my speech.",
+    "ur": "موسیٰؑ نے عرض کیا \" پروردگار، میرا سینہ کھول دے۔ اور میرے کام کو میرے لیے آسان کر دے۔ اور میری زبان کی گرہ سُلجھا دے۔ تاکہ لوگ میری بات سمجھ سکیں۔",
+    "translit": "Qala rabbi ishrah lee sadree … Wayassir lee amree … Waohlul ʿuqdatan min lisanee … Yafqahoo qawlee",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "furqan-74",
+    "surah": 25,
+    "from": 74,
+    "to": 74,
+    "surahName": {
+      "en": "Al-Furqan",
+      "ar": "الفرقان"
+    },
+    "ar": "وَٱلَّذِينَ يَقُولُونَ رَبَّنَا هَبۡ لَنَا مِنۡ أَزۡوَٰجِنَا وَذُرِّيَّـٰتِنَا قُرَّةَ أَعۡيُنٖ وَٱجۡعَلۡنَا لِلۡمُتَّقِينَ إِمَامًا ﴿٧٤﴾",
+    "en": "And those who say, \"Our Lord, grant us from among our wives and offspring comfort to our eyes and make us an example for the righteous.",
+    "ur": "جو دعائیں مانگا کرتے ہیں کہ \"اے ہمارے رب، ہمیں اپنی بیویوں اور اپنی اولاد سے آنکھوں کی ٹھنڈک دے اور ہم کو پرہیز گاروں کا امام بنا۔",
+    "translit": "Waallatheena yaqooloona rabbana hab lana min azwajina wathurriyyatina qurrata aʿyunin waijʿalna lilmuttaqeena imaman",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "muminun-118",
+    "surah": 23,
+    "from": 118,
+    "to": 118,
+    "surahName": {
+      "en": "Al-Mu'minun",
+      "ar": "المؤمنون"
+    },
+    "ar": "وَقُل رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّـٰحِمِينَ ﴿١١٨﴾",
+    "en": "And, [O Muhammad], say, \"My Lord, forgive and have mercy, and You are the best of the merciful.",
+    "ur": "اے محمدؐ، کہو، \"میرے رب درگزر فرما، اور رحم کر، اور تو سب رحیموں سے اچھا رحیم ہے۔",
+    "translit": "Waqul rabbi ighfir wairham waanta khayru alrrahimeena",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "kahf-10",
+    "surah": 18,
+    "from": 10,
+    "to": 10,
+    "surahName": {
+      "en": "Al-Kahf",
+      "ar": "الكهف"
+    },
+    "ar": "إِذۡ أَوَى ٱلۡفِتۡيَةُ إِلَى ٱلۡكَهۡفِ فَقَالُواْ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحۡمَةٗ وَهَيِّئۡ لَنَا مِنۡ أَمۡرِنَا رَشَدٗا ﴿١٠﴾",
+    "en": "[Mention] when the youths retreated to the cave and said, \"Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
+    "ur": "جب وہ چند نوجوان غار میں پناہ گزیں ہوئے اور انہوں نے کہا کہ \"اے پروردگار، ہم کو اپنی رحمت خاص سے نواز اور ہمارا معاملہ درست کر دے،۔",
+    "translit": "Ith awa alfityatu ila alkahfi faqaloo rabbana atina min ladunka rahmatan wahayyi lana min amrina rashadan",
+    "tags": [
+      "dua"
+    ]
+  },
+  {
+    "id": "ibrahim-41",
+    "surah": 14,
+    "from": 41,
+    "to": 41,
+    "surahName": {
+      "en": "Ibrahim",
+      "ar": "ابراهيم"
+    },
+    "ar": "رَبَّنَا ٱغۡفِرۡ لِي وَلِوَٰلِدَيَّ وَلِلۡمُؤۡمِنِينَ يَوۡمَ يَقُومُ ٱلۡحِسَابُ ﴿٤١﴾",
+    "en": "Our Lord, forgive me and my parents and the believers the Day the account is established.",
+    "ur": "پروردگار، مجھے اور میرے والدین کو اور سب ایمان لانے والوں کو اُس دن معاف کر دیجیو جبکہ حساب قائم ہوگا۔",
+    "translit": "Rabbana ighfir lee waliwalidayya walilmumineena yawma yaqoomu alhisabu",
+    "tags": [
+      "dua"
     ]
   }
 ]

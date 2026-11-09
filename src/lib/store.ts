@@ -16,13 +16,76 @@ export interface AppState {
   /** YYYY-MM-DD → which daily lanterns were lit */
   days: Record<string, boolean[]>;
   returns: number;
+  prayer: PrayerSettings;
+  tasbih: TasbihState;
+  journal: JournalEntry[];
+  reminders: { prayers: boolean; night: boolean };
+}
+
+export type CalcMethod =
+  | 'Karachi'
+  | 'MuslimWorldLeague'
+  | 'NorthAmerica'
+  | 'MoonsightingCommittee'
+  | 'UmmAlQura'
+  | 'Egyptian'
+  | 'Dubai'
+  | 'Qatar'
+  | 'Kuwait'
+  | 'Turkey'
+  | 'Singapore';
+
+export interface PrayerLocation {
+  lat: number;
+  lng: number;
+  /** City id from the built-in list, or 'gps'. */
+  id: string;
+  /** IANA time zone the times are shown in. */
+  tz: string;
+}
+
+export interface PrayerSettings {
+  loc: PrayerLocation | null;
+  method: CalcMethod;
+  madhab: 'hanafi' | 'shafi';
+}
+
+export interface TasbihState {
+  dhikr: string;
+  count: number;
+  /** 0 = no target */
+  target: number;
+  /** YYYY-MM-DD → total taps that day */
+  days: Record<string, number>;
+  total: number;
+}
+
+export interface JournalEntry {
+  id: string;
+  /** ISO timestamp */
+  at: string;
+  mood?: string;
+  prompt?: string;
+  text: string;
 }
 
 const KEY = 'dar-e-nijaat:v2';
 const KEEP_DAYS = 400;
 
 function fresh(): AppState {
-  return { v: 2, lang: 'en', theme: 'auto', onboarded: false, stations: {}, days: {}, returns: 0 };
+  return {
+    v: 2,
+    lang: 'en',
+    theme: 'auto',
+    onboarded: false,
+    stations: {},
+    days: {},
+    returns: 0,
+    prayer: { loc: null, method: 'Karachi', madhab: 'hanafi' },
+    tasbih: { dhikr: 'subhanallah', count: 0, target: 33, days: {}, total: 0 },
+    journal: [],
+    reminders: { prayers: false, night: false },
+  };
 }
 
 function read(key: string): unknown {
@@ -62,6 +125,12 @@ function normalise(s: AppState): AppState {
   if (s.lang !== 'en' && s.lang !== 'ur') s.lang = 'en';
   if (!['auto', 'day', 'night'].includes(s.theme)) s.theme = 'auto';
   if (typeof s.returns !== 'number' || s.returns < 0) s.returns = 0;
+  const f = fresh();
+  s.prayer = { ...f.prayer, ...(s.prayer ?? {}) };
+  s.tasbih = { ...f.tasbih, ...(s.tasbih ?? {}) };
+  for (const k of Object.keys(s.tasbih.days)) if (k < cutoff) delete s.tasbih.days[k];
+  s.journal = Array.isArray(s.journal) ? s.journal.filter((e) => e && typeof e.text === 'string') : [];
+  s.reminders = { ...f.reminders, ...(s.reminders ?? {}) };
   return s;
 }
 
@@ -92,7 +161,8 @@ export function todayItems(today = dateKey()): boolean[] {
   return state.value.days[today] ?? DAILY.map(() => false);
 }
 
+/** Clears progress (ticks, streak, returns, tasbih). Keeps settings and the journal. */
 export function resetAll() {
-  const { lang, theme } = state.value;
-  state.value = normalise({ ...fresh(), lang, theme, onboarded: true });
+  const { lang, theme, prayer, reminders, journal } = state.value;
+  state.value = normalise({ ...fresh(), lang, theme, prayer, reminders, journal, onboarded: true });
 }

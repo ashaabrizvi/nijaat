@@ -14,10 +14,12 @@ import '@fontsource/noto-nastaliq-urdu/600.css';
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/app.css';
+import './styles/tools.css';
 
 import './lib/theme';
 import './lib/i18n';
 import './lib/install';
+import './lib/reminders';
 import { App } from './app';
 
 render(<App />, document.getElementById('app')!);

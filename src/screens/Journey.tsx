@@ -19,7 +19,7 @@ export function Journey() {
   const pct = done / STATIONS.length;
   const C = 2 * Math.PI * 22;
   const headline = done === 0 ? t('pathBeginning') : done === STATIONS.length ? t('pathWalking') : t('pathOn');
-  const open = STATIONS.find((s) => s.id === route.value.station);
+  const open = STATIONS.find((s) => s.id === route.value.sub);
 
   return (
     <div class="screen journey">
