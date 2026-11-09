@@ -1,0 +1,89 @@
+/* Dar-e-Nijaat design tokens — warm, cosy, mercy-first. */
+:root {
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-quran: 'Amiri Quran', 'Amiri', 'Scheherazade New', 'Traditional Arabic', serif;
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+
+  --radius-s: 12px;
+  --radius: 20px;
+  --radius-l: 28px;
+  --arch: 160px 160px var(--radius-l) var(--radius-l) / 120px 120px var(--radius-l) var(--radius-l);
+  --nav-h: 72px;
+  --gutter: 18px;
+  --max: 520px;
+  --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+}
+
+/* ---------- Day: cream, parchment, gold, sage, rose ---------- */
+:root,
+:root[data-theme='day'] {
+  color-scheme: light;
+  --bg: #fbf4e8;
+  --bg-2: #f5e8d2;
+  --card: #fffaf2;
+  --card-2: #fdf1df;
+  --ink: #3d2e26;
+  --ink-soft: #6e5a4c;
+  --ink-faint: #9a8576;
+  --line: #ead9bf;
+  --gold: #c9973f;
+  --gold-deep: #8a5f17;
+  --gold-soft: #f6e2b8;
+  --sage: #6f9c80;
+  --sage-deep: #355f4b;
+  --sage-soft: #dfeadc;
+  --rose: #d98f86;
+  --rose-soft: #f8e1dc;
+  --primary: #355f4b;
+  --primary-ink: #fffaf2;
+  --shadow: 0 1px 2px rgba(97, 64, 30, 0.06), 0 8px 24px rgba(97, 64, 30, 0.08);
+  --shadow-lift: 0 2px 6px rgba(97, 64, 30, 0.08), 0 16px 36px rgba(97, 64, 30, 0.14);
+  --glass-off: #f3e6d1;
+  --glass-on: #ffd98a;
+  --flame: #fff3c9;
+  --halo: rgba(255, 196, 92, 0.45);
+  --hero-from: #fdf0d9;
+  --hero-to: #f8e3c6;
+  --door-wood: #7a4b2c;
+  --door-carve: #a26a40;
+  --door-frame: #e7c98f;
+  --door-frame-inner: #c9973f;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23c9973f' stroke-opacity='.13' stroke-width='1'%3E%3Crect x='17' y='17' width='22' height='22'/%3E%3Crect x='17' y='17' width='22' height='22' transform='rotate(45 28 28)'/%3E%3Ccircle cx='28' cy='28' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ---------- Night: tahajjud blue, starlight gold ---------- */
+:root[data-theme='night'] {
+  color-scheme: dark;
+  --bg: #0e1628;
+  --bg-2: #121d35;
+  --card: #17223c;
+  --card-2: #1c2946;
+  --ink: #f4eadb;
+  --ink-soft: #c5b9a8;
+  --ink-faint: #8f8676;
+  --line: #2a3859;
+  --gold: #e5bc6a;
+  --gold-deep: #f0cf8d;
+  --gold-soft: #3a3326;
+  --sage: #8fc0a1;
+  --sage-deep: #a9d6b8;
+  --sage-soft: #1f3335;
+  --rose: #eaa69c;
+  --rose-soft: #3a2a33;
+  --primary: #e5bc6a;
+  --primary-ink: #1a1408;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 2px 6px rgba(0, 0, 0, 0.35), 0 18px 40px rgba(0, 0, 0, 0.45);
+  --glass-off: #24314f;
+  --glass-on: #ffcf6b;
+  --flame: #fff1c4;
+  --halo: rgba(255, 190, 80, 0.38);
+  --hero-from: #18264a;
+  --hero-to: #0f1a33;
+  --door-wood: #5a3a26;
+  --door-carve: #82593a;
+  --door-frame: #3b4a72;
+  --door-frame-inner: #e5bc6a;
+  --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23e5bc6a' stroke-opacity='.07' stroke-width='1'%3E%3Crect x='17' y='17' width='22' height='22'/%3E%3Crect x='17' y='17' width='22' height='22' transform='rotate(45 28 28)'/%3E%3Ccircle cx='28' cy='28' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}

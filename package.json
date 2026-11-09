@@ -1,0 +1,30 @@
+{
+  "name": "dar-e-nijaat",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dar-e-Nijaat — the door of return. A gentle, private companion for tawbah, salah and walking back to Allah.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "content:ayat": "node scripts/build-ayat.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "@fontsource/amiri-quran": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/noto-nastaliq-urdu": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "@preact/signals": "^2.11.4",
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "quran-json": "^3.1.2",
+    "typescript": "5.9",
+    "vite": "^8.3.6",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}
