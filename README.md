@@ -15,7 +15,13 @@ The word *nijaat* is trending because of a popular drama. This app is about what
 | **Journey** | Five stations on a lantern-lit path. Each one has a reflection, practices to tick, an ayah, a hadith and a tip. |
 | **Return** | The door of tawbah. Tapping *I'm returning* opens the door, leads a short guided breath with *Astaghfirullah*, then shows Sayyid al-Istighfar (Arabic, transliteration, meaning, virtue). It ends with a narration about mercy. |
 | **Nijaat** | "What is Nijaat?" covers the word, the Qur'anic invitation to *an-najāh* (40:41), Yunus (AS) in the darkness (21:87–88), what nijaat is *not*, and "He comes running". |
-| **More** | Language, day/night/auto theme, privacy, install, share, sources and reset. |
+| **More** | A hub of companions (below), plus settings: language, day/night/auto theme, privacy, install, share, sources and reset. |
+| **Prayer times** | Calculated on the device with [adhan](https://github.com/batoulapps/adhan-js). Choose a city or use GPS (rounded to about 1 km and never sent anywhere). Shows the next prayer with a countdown, today's times, the Qibla bearing, the calculation method and the Hanafi/Shafi'i Asr. |
+| **Tasbih** | A big, tappable bead with haptics, six adhkar, targets of 33/99/100/∞, and today's and all-time totals. |
+| **Duas** | 19 duas in four themes (forgiveness; a heavy heart; guidance and steadfastness; this life and the next). Qur'anic duas come from the generated ayat. Sunnah duas use Arabic copied from the sunnah.com dataset, with grading. |
+| **Journal** | Private reflections with gentle prompts and mood chips. Entries stay on the device, with a plain-text export. |
+| **Quote cards** | Share an ayah or dua as an image: Story (9:16) or Post (1:1), day or night. Drawn on a canvas with correct Arabic and Urdu shaping. |
+| **Reminders** | Prayer-time and nightly istighfar notifications. On the web these work while the app is open or installed and recently used. Phase 3 switches to native local notifications. |
 
 ### Principles
 
@@ -30,10 +36,12 @@ Vite + Preact + TypeScript + Preact Signals, with vite-plugin-pwa (Workbox). The
 
 ```
 src/
-  content/   ayat (generated), hadith, stations, daily items, duas, essence, UI strings (en/ur)
-  screens/   Welcome, Today, Journey, Return, Nijaat, More
+  content/   ayat (generated), hadith, stations, daily items, duas, dua library, cities, essence, UI strings (en/ur)
+  screens/   Welcome, Today, Journey, Return, Nijaat, More (hub), Settings
+    tools/   Prayer, Tasbih, Duas, Journal
   components/ Lantern, Door, Icon, cards, check rows
-  lib/       store (localStorage + v1 migration), streak, i18n, theme, router, share, install
+  lib/       store (localStorage + v1 migration), streak, i18n, theme, router, share, install,
+             prayer (adhan), reminders, quotecard (canvas)
   styles/    tokens (day/night palettes), base, app
 scripts/     build-ayat.mjs (Qur'an content), make-icons.mjs (PWA/store icons)
 assets/      icon source + store icons
@@ -64,8 +72,8 @@ The Urdu renderings of the hadith, the dua's meaning, and all reflective copy we
 
 ## Roadmap
 
-- **Phase 1 (this release):** redesign, restructure, bilingual, sourced content, offline PWA.
-- **Phase 2:** prayer times (calculated on device), tasbih counter, dua library, a private journal, shareable quote-card images, gentle reminders.
+- **Phase 1 ✓:** redesign, restructure, bilingual, sourced content, offline PWA.
+- **Phase 2 ✓ (v1.1):** prayer times (calculated on device), tasbih counter, dua library, a private journal, shareable quote-card images, gentle reminders.
 - **Phase 3:** Capacitor apps for Play Store and App Store with local notifications, haptics and a widget.
 
 ---

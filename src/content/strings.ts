@@ -1,7 +1,8 @@
+import { S_TOOLS } from './strings-tools';
 import type { L } from './types';
 
 /** UI copy. Urdu uses the respectful, gender-neutral آپ + imperative forms. */
-export const S = {
+const BASE = {
   appName: { en: 'Dar-e-Nijaat', ur: 'درِ نجات' },
   appTagline: { en: 'The door of return', ur: 'لوٹنے کا دروازہ' },
   salaam: { en: 'Assalamu alaikum', ur: 'السلام علیکم' },
@@ -118,7 +119,7 @@ export const S = {
   },
   install: { en: 'Install', ur: 'انسٹال کریں' },
   resetTitle: { en: 'Start fresh', ur: 'نئے سرے سے شروع کریں' },
-  resetBody: { en: 'Clears your ticks, streak and returns on this device.', ur: 'اس فون سے آپ کے نشانات، سفر اور واپسی کی تعداد مٹا دیتا ہے۔' },
+  resetBody: { en: 'Clears your ticks, streak, returns and tasbih counts on this device. Your journal and settings stay.', ur: 'اس فون سے آپ کے نشانات، سفر، واپسی اور تسبیح کی گنتی مٹا دیتا ہے۔ آپ کی ڈائری اور ترتیبات محفوظ رہیں گی۔' },
   resetConfirm: { en: 'Clear everything on this device? This can’t be undone.', ur: 'اس فون سے سب کچھ مٹا دیں؟ یہ واپس نہیں ہو سکے گا۔' },
   reset: { en: 'Reset', ur: 'مٹا دیں' },
   madeWith: { en: 'Made with love, for the sake of Allah.', ur: 'محبت کے ساتھ، اللہ کی رضا کے لیے۔' },
@@ -133,5 +134,7 @@ export const S = {
   welcomeNext: { en: 'Next', ur: 'اگلا' },
   chooseLang: { en: 'Choose your language', ur: 'اپنی زبان منتخب کریں' },
 } satisfies Record<string, L>;
+
+export const S = { ...BASE, ...S_TOOLS };
 
 export type StringKey = keyof typeof S;

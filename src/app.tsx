@@ -1,4 +1,5 @@
 import { Icon } from './components/Icon';
+import { QuoteSheet } from './components/QuoteSheet';
 import { t } from './lib/i18n';
 import { go, route, type Tab } from './lib/router';
 import { toast } from './lib/share';
@@ -49,6 +50,7 @@ export function App() {
         ))}
       </nav>
 
+      <QuoteSheet />
       {toast.value && (
         <div class="toast" role="status">
           {toast.value}

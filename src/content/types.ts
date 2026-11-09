@@ -11,6 +11,8 @@ export interface Ayah {
   ar: string;
   en: string;
   ur: string;
+  /** Tanzil transliteration (verses joined with …). */
+  translit: string;
   tags: string[];
 }
 

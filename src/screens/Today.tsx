@@ -1,17 +1,20 @@
 import { useState } from 'preact/hooks';
-import { AyahCard, SectionHead, ayahShareText } from '../components/Cards';
+import { AyahCard, SectionHead } from '../components/Cards';
 import { CheckRow } from '../components/Check';
 import { Icon } from '../components/Icon';
 import { Lantern } from '../components/Lantern';
-import { ayah, DAILY_POOL } from '../content/ayat';
+import { openQuote } from '../components/QuoteSheet';
+import { ayah, ayahRef, DAILY_POOL } from '../content/ayat';
 import { DAILY, REMEMBER } from '../content/daily';
 import { today } from '../lib/clock';
 import { dayNumber, formatDate, formatHijri } from '../lib/date';
 import { lang, num, t, tl } from '../lib/i18n';
-import { haptic, share } from '../lib/share';
+import { go } from '../lib/router';
+import { haptic } from '../lib/share';
 import { state, update } from '../lib/store';
 import { computeStreak } from '../lib/streak';
 import { theme } from '../lib/theme';
+import { NextPrayerCard } from './tools/Prayer';
 
 export function Today() {
   const day = today.value;
@@ -75,6 +78,24 @@ export function Today() {
         </div>
       </section>
 
+      <section class="block today-tools">
+        <NextPrayerCard compact />
+        <div class="quick-row">
+          {(
+            [
+              ['tasbih', 'beads', 'toolTasbih'],
+              ['duas', 'hands', 'toolDuas'],
+              ['journal', 'pen', 'toolJournal'],
+            ] as const
+          ).map(([id, icon, label]) => (
+            <button key={id} class="quick" onClick={() => go('more', id)}>
+              <Icon name={icon} size={20} />
+              {t(label)}
+            </button>
+          ))}
+        </div>
+      </section>
+
       <section class="block">
         <SectionHead label={t('ayahOfDay')} />
         <AyahCard a={a}>
@@ -83,7 +104,7 @@ export function Today() {
               <Icon name="refresh" size={17} />
               {t('anotherAyah')}
             </button>
-            <button class="btn-ghost" onClick={() => share(ayahShareText(a), t('copied'))}>
+            <button class="btn-ghost" onClick={() => openQuote({ ar: a.ar, text: lang.value === 'ur' ? a.ur : `“${a.en}”`, ref: ayahRef(a, lang.value), lang: lang.value })}>
               <Icon name="share" size={17} />
               {t('share')}
             </button>

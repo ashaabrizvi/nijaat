@@ -42,9 +42,3 @@ export function SectionHead({ label, title, sub }: { label?: string; title?: str
     </header>
   );
 }
-
-/** The daily ayah text, formatted for sharing to WhatsApp / Instagram. */
-export function ayahShareText(a: Ayah): string {
-  const l = lang.value;
-  return `${a.ar}\n\n${l === 'ur' ? a.ur : `“${a.en}”`}\n— ${ayahRef(a, l)}`;
-}
